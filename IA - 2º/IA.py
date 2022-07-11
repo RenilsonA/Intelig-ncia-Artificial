@@ -22,10 +22,10 @@ TestX = escalar.transform(TestX)
 
 #KNN
 KNN = KNeighborsClassifier() 
-#KNN.fit(TrainX, TrainY) 
-pred = KNN.predict(TestX)
-matriz = confusion_matrix(TestY, pred)
-classi = classification_report(TestY, pred)
+KNN.fit(TrainX, TrainY) 
+p = KNN.predict(TestX)
+matriz = confusion_matrix(TestY, p)
+classi = classification_report(TestY, p)
 print("Matriz de confusão:\n", matriz)
 
 #Grafico
